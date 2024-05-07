@@ -29,6 +29,7 @@ nav {
   min-width: 100%;
   max-width: 100%;
   min-height: 100vh;
+  position: relative;
 }
 .nav_pages_link {
   display: flex;
@@ -60,12 +61,6 @@ nav {
 }
 .nav_part2 img {
   width: 100%;
-}
-.nav_part2 .logo {
-    
-}
-.nav_content {
-
 }
 .nav_part2 h1 {
   font-family: "Raleway", sans-serif;
@@ -107,12 +102,162 @@ button {
 button:hover {
   opacity: 0.8;
 }
+.testimonial {
+  margin: auto;
+  margin-bottom: 2em;
+  width: 80%;
+  background-color: white;
+  border-radius: 0.5em;
+  padding: 1em;
+  box-shadow: 3px 3px 5px var(--Very-Dark-Blue);
+}
+.testimonial > img {
+  width: 1.5em;
+  display: block;
+}
+.testimonial b {
+  display: block;
+  padding: 1em;
+}
+.testimonial_profile {
+  padding: 1em;
+  display: flex;
+  align-items: center;
+  gap: 1em;
+  text-align: left;
+  font-size: 0.9em;
+}
+.testimonial_profile_img img {
+  width: 3em;
+  border-radius: 50%;
+}
+/* page1 */
+.page1_img img {
+  margin-top: 2em;
+  width: 80%;
+  margin-bottom: 4em;
+}
+.page1_content h3 {
+  color: var(--Very-Dark-Blue);
+  margin-bottom: 1em;
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+}
+.fylo_work_link {
+  display: flex;
+  justify-content: left;
+  gap: 0.5em;
+  cursor: pointer;
+}
+.fylo_work_link a {
+  color: var(--Moderate-Cyan);
+}
+  /* Page2 */
+  #page2 {
+    margin: 1em 0;
+    margin-bottom: 0;
+    padding: 2em;
+    background-color: var(--Desaturated-Blue);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  #page2 h2 {
+    font-family: "Raleway", sans-serif;
+    margin-bottom: 1em;
+  }
+  #page2 p {
+    font-family: "Raleway", sans-serif;
+    margin-bottom: 1em;
+  }
+  .page2_input {
+    display: flex;
+    flex-direction: column;
+  }
+  .page2_input_box {
+    width: 25em;
+    margin-bottom: 1em;
+  }
+  .page2_input_btn {
+    width: 21em;
+  }
+@media (min-width: 62.1em) {
+  /* nav */
+  .nav_get_started input {
+    margin-bottom: 1em;
+    width: 25em;
+  }
+  .nav_get_started button {
+    margin-bottom: 1em;
+    width: 21em;
+  }
+  .nav_main_img {
+    top: 20%;
+    width: 40%;
+    position: absolute;
+    right: 5%;
+  }
+  .nav_content {
+    width: 50%;
+    position: absolute;
+    top: 20%;
+    left: 5%;
+  }
 
-/* Main */
-/* main {
-  background-image: url(./images/bg-curve-desktop.svg);
-} */
-
+  /* Main */
+  main {
+    position: relative;
+    min-width: 100%;
+    max-width: 100%;
+    min-height: 100vh;
+    background-color: var(--Light-Grayish-Blue);
+  }
+  .background_img {
+    min-width: 100%;
+    max-width: 100%;
+    height: 8vh;
+    position: absolute;
+    top: -8%;
+    background-image: url(./images/bg-curve-desktop.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .page1_img {
+    position: absolute;
+    top: 5%;
+    right: 4%;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+  }
+  .page1_img img {
+    width: 70%;
+  }
+  .page1_content {
+    width: 40%;
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+  }
+  .testimonial {
+    position: absolute;
+    top: 120%;
+    margin-bottom: 1em;
+  }
+  .page1_content h3 {
+    font-size: 2em;
+  }
+  .page1_content p {
+    margin-bottom: 1em;
+    padding: 0.5em;
+  }
+}
 /* Media Query for Mobile and Tab */
 @media (max-width: 62em) {
   .logo img {
@@ -171,60 +316,15 @@ button:hover {
   }
 
   /* page1 */
-  .page1_img img {
-    margin-top: 2em;
-    width: 80%;
-    margin-bottom: 4em;
-  }
-  .page1_content h3 {
-    color: var(--Very-Dark-Blue);
-    margin-bottom: 1em;
-    font-family: "Raleway", sans-serif;
-    font-weight: 700;
-  }
   .page1_content p {
     margin-bottom: 1em;
     padding: 1em;
   }
   .fylo_work_link {
-    display: flex;
     justify-content: center;
-    gap: 0.5em;
     margin-bottom: 2em;
-    cursor: pointer;
   }
-  .fylo_work_link a {
-    color: var(--Moderate-Cyan);
-  }
-  .testimonial {
-    margin: auto;
-    margin-bottom: 2em;
-    width: 80%;
-    background-color: white;
-    border-radius: 0.5em;
-    padding: 1em;
-    box-shadow: 3px 3px 5px var(--Very-Dark-Blue);
-  }
-  .testimonial > img {
-    width: 1.5em;
-    display: block;
-  }
-  .testimonial b {
-    display: block;
-    padding: 1em;
-  }
-  .testimonial_profile {
-    padding: 1em;
-    display: flex;
-    align-items: center;
-    gap: 1em;
-    text-align: left;
-    font-size: 0.9em;
-  }
-  .testimonial_profile_img img {
-    width: 3em;
-    border-radius: 50%;
-  }
+
   /* Page2 */
   #page2 {
     margin: 1em 0;
