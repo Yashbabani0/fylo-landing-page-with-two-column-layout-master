@@ -15,7 +15,6 @@
     <title>Frontend Mentor | Fylo landing page with two column layout</title>
 
     <link rel="stylesheet" href="style.css" />
-    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
   </head>
   <body>
     <nav>
@@ -41,9 +40,13 @@
             and co-workers.
           </p>
           <div class="nav_get_started">
-            <input type="email" placeholder="Enter your email..." />
+            <input
+              class="nav_email_input"
+              type="email"
+              placeholder="Enter your email..."
+            />
             <div class="success_msg hidden">Please check your email</div>
-            <button type="submit">Get Started</button>
+            <button class="nav_btn" type="submit">Get Started</button>
           </div>
         </div>
       </div>
@@ -103,7 +106,7 @@
             type="email"
             placeholder="email@example.com"
           />
-          <div class="success_msg hidden">Please check your email</div>
+          <div class="footer_success_msg hidden">Please check your email</div>
           <button class="page2_input_btn" type="submit">
             Get Started For Free
           </button>
@@ -146,5 +149,6 @@
         </p>
       </div>
     </footer>
+    <script src="script.js"></script>
   </body>
 </html>
