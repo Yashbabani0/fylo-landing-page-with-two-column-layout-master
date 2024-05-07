@@ -16,7 +16,6 @@
 
     <link rel="stylesheet" href="style.css" />
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
-
   </head>
   <body>
     <nav>
@@ -88,19 +87,23 @@
           </div>
         </div>
       </div>
-      <div id="page2" >
-        <h2>Get early access today</h2>
-        <p class="page2_p">
-          It only takes a minute to sign up and our free starter tier is
-          extremely generous. If you have any questions, our support team would
-          be happy to help you.
-        </p>
+      <div id="page2">
+        <div class="page2_content">
+          <h2>Get early access today</h2>
+          <p class="page2_p">
+            It only takes a minute to sign up and our free starter tier is
+            extremely generous. If you have any questions, our support team
+            would be happy to help you.
+          </p>
+        </div>
+
         <div class="page2_input">
           <input
             class="page2_input_box"
             type="email"
             placeholder="email@example.com"
           />
+          <div class="success_msg hidden">Please check your email</div>
           <button class="page2_input_btn" type="submit">
             Get Started For Free
           </button>
@@ -110,31 +113,36 @@
 
     <footer>
       <div class="footer_logo">
-        <img src="./images/logo.svg" alt="" />
+        <img src="./images/footer_logo.svg" alt="" />
       </div>
-      <div class="footer_contactus">
-        <span
-          ><img src="./images/icon-phone.svg" alt="" /> Phone:
-          +1-543-123-4567</span
-        >
-        <br />
-        <span
-          ><img src="./images/icon-email.svg" alt="" /> example@fylo.com</span
-        >
+      <div class="footer_content">
+        <div class="footer_contactus">
+          <span
+            ><img src="./images/icon-phone.svg" alt="" /> Phone:
+            +1-543-123-4567</span
+          >
+          <br />
+          <br />
+          <span
+            ><img src="./images/icon-email.svg" alt="" /> example@fylo.com</span
+          >
+        </div>
+        <div class="footer_links_part1">
+          <a href="">About Us</a> <a href="">Jobs</a> <a href="">Press</a>
+          <a href="">Blog</a>
+        </div>
+        <div class="footer_links_part2">
+          <a href="">Contact Us</a> <a href="">Terms</a> <a href="">Privacy</a>
+        </div>
       </div>
-      <div class="footer_links_part1">
-        <a href="">About Us</a> <a href="">Jobs</a> <a href="">Press</a>
-        <a href="">Blog</a>
-      </div>
-      <div class="footer_links_part2">
-        <a href="">Contact Us</a> <a href="">Terms</a> <a href="">Privacy</a>
-      </div>
+
       <div id="attribution">
-        <p class="attribution" style="text-align: center;">
+        <p class="attribution" style="text-align: center">
           Challenge by
           <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
             >Frontend Mentor</a
-          >. <br> Coded by <a href="https://github.com/Yashbabani0/">Yash Babani</a>.
+          >. <br />
+          Coded by <a href="https://github.com/Yashbabani0/">Yash Babani</a>.
         </p>
       </div>
     </footer>

@@ -152,44 +152,65 @@ button:hover {
 .fylo_work_link a {
   color: var(--Moderate-Cyan);
 }
-  /* Page2 */
-  #page2 {
-    margin: 1em 0;
-    margin-bottom: 0;
-    padding: 2em;
-    background-color: var(--Desaturated-Blue);
-    color: white;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-  }
-  #page2 h2 {
-    font-family: "Raleway", sans-serif;
-    margin-bottom: 1em;
-  }
-  #page2 p {
-    font-family: "Raleway", sans-serif;
-    margin-bottom: 1em;
-  }
-  .page2_input {
-    display: flex;
-    flex-direction: column;
-  }
-  .page2_input_box {
-    width: 25em;
-    margin-bottom: 1em;
-  }
-  .page2_input_btn {
-    width: 21em;
-  }
+/* Page2 */
+#page2 {
+  width: 100%;
+  margin: 1em 0;
+  margin-bottom: 0;
+  padding: 2em;
+  background-color: var(--Desaturated-Blue);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+#page2 h2 {
+  font-family: "Raleway", sans-serif;
+  margin-bottom: 1em;
+}
+#page2 p {
+  font-family: "Raleway", sans-serif;
+  margin-bottom: 1em;
+}
+.page2_input {
+  display: flex;
+  flex-direction: column;
+}
+.page2_input_box {
+  width: 25em;
+  margin-bottom: 1em;
+}
+.page2_input_btn {
+  width: 21em;
+}
+/* Footer */
+footer {
+  background-color: var(--Very-Dark-Blue);
+  color: white;
+  padding: 2em;
+}
+.footer_contactus {
+  margin: 1em 0;
+}
+.footer_contactus img {
+  width: 1em;
+  margin-right: 0.5em;
+}
+.footer_links_part1 {
+  display: flex;
+  margin-bottom: 1em;
+}
+/* Media query for pc screen */
 @media (min-width: 62.1em) {
   /* nav */
   .nav_get_started input {
+    display: block;
     margin-bottom: 1em;
     width: 25em;
   }
   .nav_get_started button {
+    display: block;
     margin-bottom: 1em;
     width: 21em;
   }
@@ -247,7 +268,7 @@ button:hover {
   }
   .testimonial {
     position: absolute;
-    top: 120%;
+    top: 110%;
     margin-bottom: 1em;
   }
   .page1_content h3 {
@@ -257,7 +278,47 @@ button:hover {
     margin-bottom: 1em;
     padding: 0.5em;
   }
+  #page2 {
+    position: absolute;
+    top: 97%;
+    display: flex;
+    flex-direction: row;
+    gap: 5em;
+    height: 40vh;
+  }
+  .page2_content {
+    width: 50%;
+  }
+  .page2_input {
+    width: 50%;
+  }
+  .page2_input_box {
+    width: 30em;
+  }
+  .page2_input_btn {
+    width: 25em;
+  }
+  .page2_p {
+    line-height: 2;
+  }
+  /* footer */
+  footer {
+    position: absolute;
+    width: 100%;
+    top: 237%;
+  }
+  .footer_content {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1em;
+  }
+  .footer_links_part1 a,
+  .footer_links_part2 a {
+    margin-bottom: 1em;
+  }
 }
+
 /* Media Query for Mobile and Tab */
 @media (max-width: 62em) {
   .logo img {
@@ -324,71 +385,26 @@ button:hover {
     justify-content: center;
     margin-bottom: 2em;
   }
+}
 
-  /* Page2 */
-  #page2 {
-    margin: 1em 0;
-    margin-bottom: 0;
-    padding: 2em;
-    background-color: var(--Desaturated-Blue);
-    color: white;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-  }
-  #page2 h2 {
-    font-family: "Raleway", sans-serif;
-    margin-bottom: 1em;
-  }
-  #page2 p {
-    font-family: "Raleway", sans-serif;
-    margin-bottom: 1em;
-  }
-  .page2_input {
-    display: flex;
-    flex-direction: column;
-  }
-  .page2_input_box {
-    width: 25em;
-    margin-bottom: 1em;
-  }
-  .page2_input_btn {
-    width: 21em;
-  }
-
-  /* Footer */
-  footer {
-    background-color: var(--Very-Dark-Blue);
-    color: white;
-    padding: 2em;
-  }
-  .footer_contactus {
-    margin: 1em 0;
-  }
-  .footer_contactus img {
-    width: 1em;
-    margin-right: 0.5em;
-  }
-  .footer_links_part1 {
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 1em;
-  }
-  .footer_links_part2 {
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 1em;
-  }
-  .footer_links_part1 a,
-  .footer_links_part2 a {
-    color: white;
-    text-decoration: none;
-  }
-  #attribution {
-    color: white;
-  }
-  #attribution a {
-    color: white;
-  }
+/* footer */
+.footer_links_part1 {
+  flex-direction: column;
+  margin-bottom: 1em;
+}
+.footer_links_part2 {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1em;
+}
+.footer_links_part1 a,
+.footer_links_part2 a {
+  color: white;
+  text-decoration: none;
+}
+#attribution {
+  color: white;
+}
+#attribution a {
+  color: white;
 }
